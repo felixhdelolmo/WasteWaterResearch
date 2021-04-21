@@ -9,8 +9,8 @@ model Agent
   Integer a;
 equation
   when sample(agent_start, agent_period) then
-      a = na(5);
-  
+      //a = na(5);
+      a=1;
   end when;
   y = 2 + a annotation(Icon(coordinateSystem(extent = {{-100,-100},{100,100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2,2})), Diagram(coordinateSystem(extent = {{-100,-100},{100,100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2,2})));
   annotation(Icon(coordinateSystem(extent = {{-100,-100},{100,100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2,2}), graphics = {Polygon(origin = {1.03214,1.38434}, fillColor = {0,85,255}, fillPattern = FillPattern.CrossDiag, points = {{-26.9431,45.9841},{0.587292,52.057},{57.6723,8.737109999999999},{-42.3277,-52.8013},{42.2877,-49.1576},{-57.3074,6.30797},{-49.6151,36.6723},{11.5185,-9.48151},{-9.53417,31.814},{-9.53417,31.4092},{-29.7771,37.4821},{-27.7528,53.6764},{-26.9431,45.9841}}),Bitmap(extent = {{11.7409,19.4332},{-5.26316,27.1255}})}));
